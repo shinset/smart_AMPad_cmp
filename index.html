@@ -1,0 +1,410 @@
+<!doctype html>
+<html ⚡ lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="This is the AMP Boilerplate.">
+	<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<meta name="amp-consent-blocking" content="amp-analytics" />
+	<link rel="preload" href="hero-img.jpg" as="image">
+	<link rel="preload" href="poster.jpg" as="image">
+	<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<!-- Import other AMP Extensions here -->
+<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script> <!-- AMP CMP MODULE -->
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+	<style amp-custom>
+	/* quantcast cmp Persistent consent link style  */
+
+		#postPromptUI button {
+			background: #368bd6;
+			color: white;
+			padding: 5px 15px;
+			border: none;
+			outline: none;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			border-radius: 3px 0 0 3px;
+			max-height: 30px;
+			max-width: 110px;
+			cursor: pointer;
+		}
+
+		/* Add your styles here */
+
+	header {
+	text-align: center;
+	background: url("https://source.unsplash.com/random");
+	background-size: cover;
+	color: white;
+	}
+	
+	#content {
+	background: rgb(238,174,202);
+	background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	}
+	
+	button {
+	border: 5px solid white;
+	border-radius: 10px;
+	width: 120px;
+	padding: 3px;
+	}
+	
+	button a {
+	color: black;
+	text-decoration: none;
+	
+	}
+	
+	a {
+	color: white;
+	text-decoration: none;
+	}
+	
+	h1 {
+	font-size: 70px;
+	font-family: Raleway, sans-serif;
+	}
+	
+	h2 {
+	text-decoration: underline;
+	}
+	
+	amp-img {
+	margin: 50px 0px 0px 0px;
+	border: 7px solid white;
+	border-radius: 20px;
+	width: 140px;
+	}
+	
+	#trk {
+	display: none;
+	}
+	
+	
+	ul {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	margin-bottom: 0px;
+	}
+	
+	li {
+	display: inline;
+	padding: 0px 10px 0px 10px;
+	}
+	
+	article {
+	max-width: 500px;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	}
+	
+	/* Inset, by Dan Eden */
+	
+	hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+  .codeblock{
+	font-size: 2vw;
+
+  }
+
+	</style>
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+
+	<link rel="canonical" href=".">
+	<title>My AMP Page</title>
+	<script type="application/ld+json">
+		{
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://www.example.com",
+      "name": "My Webpage",
+      "headline": "webpage title",
+      "description": "Here is the description",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Publisher",
+        "logo": {
+          "url": "https://www.example.com/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/leader.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+	</script>
+
+</head>
+
+<body>
+
+<div id="content"> 
+
+<!-- QUANTCAST CMP -->
+<amp-consent id="quantcast" layout="nodisplay" type="quantcast">
+	<script type="application/json">
+		{
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+          "coreUiLabels": {},
+          "theme": {},
+          "coreConfig": {
+                    "quantcastAccountId": "n_dWPu3mUu_6e",
+                    "privacyMode": [
+                              "GDPR"
+                    ],
+                    "hashCode": "fYAph7ch+H2Sg7bLkcXB5g",
+                    "publisherCountryCode": "FR",
+                    "publisherName": "TCJ",
+                    "vendorPurposeIds": [
+                              1,
+                              2,
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                    ],
+                    "vendorFeaturesIds": [
+                              1,
+                              2,
+                              3
+                    ],
+                    "vendorPurposeLegitimateInterestIds": [
+                              2,
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                    ],
+                    "vendorSpecialFeaturesIds": [
+                              1,
+                              2
+                    ],
+                    "vendorSpecialPurposesIds": [
+                              1,
+                              2
+                    ],
+                    "googleEnabled": true,
+                    "lang_": "fr",
+                    "displayUi": "inEU",
+                    "defaultToggleValue": "off",
+                    "initScreenRejectButtonShowing": false,
+                    "publisherConsentRestrictionIds": [],
+                    "publisherLIRestrictionIds": [],
+                    "publisherPurposeIds": [],
+                    "publisherPurposeLegitimateInterestIds": [],
+                    "publisherSpecialPurposesIds": [],
+                    "publisherFeaturesIds": [],
+                    "publisherSpecialFeaturesIds": [],
+                    "stacks": [
+                              1,
+                              42
+                    ],
+                    "rejectConsentRedirectUrl": "https://www.iab.com/",
+                    "vendorListUpdateFreq": 7
+          }
+}
+        }
+	</script>
+	<div id="postPromptUI">
+		<button role="button" on="tap:quantcast.prompt()">
+                  <svg style="height:20px">
+                      <g fill="none">
+                          <g fill="#FFF">
+                              <path
+                                  d="M16 10L15 9C15 9 15 8 15 8L16 7C16 7 16 6 16 6 16 5 15 4 14 3 14 2 13 2 13 3L12 3C12 3 11 3 11 2L11 1C11 1 10 0 10 0 9 0 7 0 6 0 6 0 5 1 5 1L5 2C5 3 4 3 4 3L3 3C3 2 2 2 2 3 1 4 0 5 0 6 0 6 0 7 0 7L1 8C1 8 1 9 1 9L0 10C0 10 0 11 0 11 0 12 1 13 2 14 2 15 3 15 3 14L4 14C4 14 5 14 5 15L5 16C5 16 6 17 6 17 7 17 9 17 10 17 10 17 11 16 11 16L11 15C11 14 12 14 12 14L13 14C13 15 14 15 14 14 15 13 16 12 16 11 16 11 16 10 16 10ZM13 13L12 13C11 13 11 13 9 14L9 16C9 16 7 16 7 16L7 14C5 14 5 13 4 13L3 13C2 13 1 12 1 11L3 10C2 9 2 8 3 7L1 6C1 5 2 4 3 4L4 4C5 4 5 3 7 3L7 1C7 1 9 1 9 1L9 3C11 3 11 4 12 4L13 4C14 4 15 5 15 6L13 7C14 8 14 9 13 10L15 11C15 12 14 13 13 13ZM8 5C6 5 5 7 5 9 5 10 6 12 8 12 10 12 11 10 11 9 11 7 10 5 8 5ZM8 11C7 11 6 10 6 9 6 7 7 6 8 6 9 6 10 7 10 9 10 10 9 11 8 11Z" />
+                          </g>
+                      </g>
+                  </svg>
+                  PRIVACY
+              </button>
+	</div>
+</amp-consent>
+<!--END QUANTCAST CMP -->
+
+<!--Standard AMP TAG Sample boilerplate from https://amp.dev/boilerplate/ 
+
+	<h1>AMP Me</h1>
+	<amp-img src="" width="1280" height="720" layout="responsive"
+		alt="This is a hero image which should be loaded as fast as possible">
+	</amp-img>
+	<amp-video width="640" height="360" layout="responsive" poster="poster.jpg" artwork="artwork.png" title="My video"
+		artist="The artist" album="The album">
+		<source src="video.m3u8" type="application/vnd.apple.mpegurl">
+		<source src="video.mp4" type="video/mp4">
+		<div fallback>This browser does not support the video element.</div>
+	</amp-video>
+-->
+
+<header>
+
+<!-- <amp-img src="https://demo.smartadserver.com/shared/smart/tcj/video/moi.jpg" alt="Welcome" height="140" width="140"></amp-img> ></amp-img>
+	-->
+	<h1>AMPAD</h1>
+	<p>Quick AMP test page with Quantcast CMP Beta AMP integration </p>
+	<ul>
+		<li><a href="https://help.quantcast.com/hc/en-us/articles/360057007654-Quantcast-Choice-AMP-Implementation-Guide">- Quantcast AMP -</a></li>
+		<li><a target="_blank"
+				href="https://help.smartadserver.com/s/article/Tagging-Accelerated-Mobile-Pages-AMP-HTML">-
+				SMART AMP -</a></li>
+		<li><a target="_blank" href="https://github.com/shinset/cmpchk/blob/master/cmplog.js">- Misc -</a></li>
+	</ul>
+
+</header>
+
+<!--
+	<article>
+		<h2>OutStream</h2>
+		<p>An Outstream display video spiced up with an interstitial</p>
+		<div id="buttons">
+			<button><a target="_blank" href="https://demo.smartadserver.com/shared/smart/tcj/ga/custom-ga-p3.html">OUSTREAM</a></button>
+		</div>
+	</article>
+	-->
+	<hr>
+	
+	<article>
+		<h2>AD HERE</h2>
+		<p>An AD that should display  only after your answer to the CMP because it use the data-on-consent "_till_responded" </p>
+	<p>
+			<pre class="codeblock">
+		amp-ad 
+    width=320 height=250 
+    type="smartadserver" 
+    data-block-on-consent="_till_responded" 
+    data-call="std"
+		data-site="391680" 
+    data-page="1343435" 
+    data-format="96641" 
+    data-target=""
+		data-domain="https://www8.smartadserver.com"
+	    </pre>
+	</p>
+	
+		<amp-ad width=320 height=250 type="smartadserver" data-block-on-consent="_till_responded" data-call="std"
+			data-site="391680" data-page="1343435" data-format="96641" data-target=""
+			data-domain="https://www8.smartadserver.com">
+		</amp-ad>
+	</article>
+	
+	
+	<hr>
+
+
+	<amp-analytics type="gtag" data-credentials="include">
+		<script type="application/json">
+			{
+      "vars" : {
+        "gtag_id": "UA-118026550-1",
+        "config" : {
+          "UA-118026550-1": {
+            "groups": "default"
+          }
+        }
+      }
+    }
+		</script>
+	</amp-analytics>
+</div>
+</body>
+
+</html>
